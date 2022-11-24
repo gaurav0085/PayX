@@ -1,13 +1,220 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.navbar-bg{
+    
+    z-index: 99;
+    position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand{
+    font-size: 3.5rem;
+}
+
+.nav-item{
+    padding: 0 1rem;
+}
+
+.nav-item a{
+    font-size: 1.7rem;
+    font-weight: lighter;
+    position: relative;    
+}
+
+.nav-item a:hover{
+    color: var(--primary-color) !important;
+    text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+}
+
+.btn{
+    width: 12rem;
+    height: 4rem;
+    border-radius: 2rem;
+    color: black;
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+    font-size: 1.6rem;
+}
+
+.btn:first-child{
+    margin-right: 2rem;
+}
+
+.header{
+    background-color: #f8f9fa !important;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-hero-container{
+    height: 80vh;
+    display: flex;
+}
+
+.main-hero-container h1{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
+
+.main-hero-para{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 3rem 0 5rem 0;
+    font-weight: lighter;
+    width: 75%;
+}
+
+.main-hero-container h3{
+    font-weight: lighter;
+}
+
+.input-group mt-3{
+    position: relative !important;
+}
+
+.form-control-text{
+    position: absolute;
+    height: 4rem;
+    outline-style: none;
+    font-size: 1.4rem;
+    font-weight: lighter;
+}
+
+.input-group-button{
+    position: absolute;
+    right: 26%;
+    top: 0.5rem;
+    color: black;
+    background-color:#198754;
+    height: 3rem;
+    width: 15%;
+    border-radius: 2rem !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem ;
+}
+
+.work-container{
+    width: 80vw;
+    padding: 5rem;
+    margin-top: 5rem;
+    box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    background-color: antiquewhite;
+}
+
+.work-container .main-heading{
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 4rem;
+    word-spacing: 1rem;
+}
+
+.work-container-subdiv{
+    padding: 0 6rem;
+}
+
+.work-container .sub-heading{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.fontawesome-style{
+    font-size: 2.3rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: grey;
+    display: grid;
+    place-items: center;
+    margin: 2rem auto;
+    
+}
+
+
+.our-services .mini-title{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 30rem;
+    text-align: left;
+    margin-top: 5rem;
+}
+
+.our-services .main-heading{
+    margin: 5rem;
+    text-align: left;
+}
+
+.our-services-info{
+    margin-top: 2rem;
+}
+
+ .our-services .our-services-number{
+    size: 5rem;
+    padding-left: 3rem;
+}
+
+.our-services-data{
+    padding-left: 6rem;
+}
+
+.our-services .our-services-data p{
+    margin: 1rem 0;
+}
+
+
+
+.service-main-container{
+    margin-top: 5rem;
+    padding: 5rem 0;
+}
+
+.service-main-container p{
+    text-align: center;
+}
+
+.service-main-container .main-heading{
+    margin-top: 2rem ;
+}
+
+.work-container-subdiv{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,0.16);
+}
+
+.work-container-subdiv .main-hero-para{
+    width: 100%;
+}
+
+.work-container-subdiv:hover{
+    background-color: lightblue;
+}
+
+.work-container-subdiv:hover> .fontawesome-style{
+    background-color: white;
+}
+
+
+.work-container-subdiv .sub-heading{
+    text-align: center;
+}
+
+
+.service-main-container .work-container-subdiv .fontawesome-style{
+    text-align: left;
+    margin: 2rem 0;
+}
+
+@media (min-width: 1400px){
+    .service-container .col-xxl-4{
+        flex: 0 0 auto;
+        width: 30% !important;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px){
+    .service-container .col-lg-4{
+        flex: 0 0 auto;
+        width: 30% !important;
+        margin: 2.5rem auto;
+    }
 }
